@@ -63,11 +63,9 @@
       }
 
       function stripChars(str, obfuscators) {
-        const returner = obfuscators.reduce((memo, obfuscator) => {
+        return obfuscators.reduce((memo, obfuscator) => {
           return stripChar(memo, obfuscator);
         }, str);
-
-        return returner;
       }
 
       function stripChar(str, char) {
