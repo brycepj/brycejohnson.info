@@ -1,0 +1,25 @@
+{
+  "name": "brycejohnson.info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycepj/brycejohnson.info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brycepj/brycejohnson.info/issues"
+  },
+  "homepage": "https://github.com/brycepj/brycejohnson.info#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}

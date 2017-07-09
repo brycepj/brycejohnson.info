@@ -9,6 +9,7 @@
       img { max-height: 300px;}
       #email-text { font-weight: bold; }
       .blur-text { background: gray; color: white; padding: 2px 6px; border-radius: 3px; cursor: pointer; margin-left: 2px; opacity: .6;}
+      .loading-gears { height: 15px; width: 15px; position: relative; top: 1px; }
     </style>
   </head>
 
@@ -26,57 +27,6 @@
 
     <p>The best way to reach me is through email, at <span id='email-text' class='blur-text'>reveal</span></p>
 
-    <script>
-      const emailTextElem = document.getElementById('email-text');
-
-      emailTextElem.addEventListener('click', (e) => {
-        logOperationTiming('reveal-email-address-timer',
-          () => revealEmailAddress(emailTextElem, unobfuscateEmailAddress()));
-      });
-
-      function logOperationTiming(timerKey, op) {
-        console.time(timerKey);
-        op();
-        console.timeEnd(timerKey);
-      }
-
-      function unobfuscateEmailAddress() {
-        return stripObfuscators([
-          '^^^^^--&&&&---ZZZZZZe###------##bZZZZZZZZZZZZ0#1###ZZZZZZZ---AAAAAAAAAA---Z',
-          'ZZZZZZZZ-------7&&&&4Z&ZZZ$$$$$$$$$$$$ZZZ####ZZZZb8ZZZ-ZZZZ-ZZLLLLLLLLLLZZ' ,
-          'ZyZaZ&---&&&pZo-ZZ$$$$$ZZZZZ####ZZZZ-ZZZZ$$$$$$$$$$$QQQQQQQQQQ$$$$-$@$$$$$Z',
-          'ZZZZZZ----ZZZZ$$$---$&&&&ZZZZZZZm^^-^^Z####oZc$$$$Z.^Z----q---BBBBBBBBBB^^Z',
-        ], getObfuscators()).reverse().join('').split('').reverse().join('');
-      }
-
-      function revealEmailAddress(node, emailAddress) {
-        node.classList.remove('blur-text');
-        node.textContent = emailAddress;
-      }
-
-      function getObfuscators() {
-        return ['Z', '-', '$', '&', '^', '#', 'Q', 'L', 'A', 'B' ];
-      }
-
-      function stripObfuscators(arr, obfuscator) {
-        return arr.map((str) => stripChars(str, obfuscator));
-      }
-
-      function stripChars(str, obfuscators) {
-        return obfuscators.reduce((memo, obfuscator) => {
-          return stripChar(memo, obfuscator);
-        }, str);
-      }
-
-      function stripChar(str, char) {
-        let newStr = str;
-
-        while (newStr.indexOf(char) > -1) {
-          newStr = newStr.replace(char, '');
-        }
-
-        return newStr;
-      }
-    </script>
+    <script src='./bundle.js'></script>
   </body>
 </html>
