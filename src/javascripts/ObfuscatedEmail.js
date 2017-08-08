@@ -22,7 +22,7 @@ module.exports = class ObfuscatedEmail extends React.Component {
   }
 
   blurTextCss() {
-    return this.state.isObfuscated ? 'blur-text' : 'plain-email-text';
+    return this.state.isObfuscated ? 'blurred-text' : 'email-text';
   }
 
   render() {

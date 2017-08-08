@@ -1,7 +1,11 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+const ImageList = require('./ImageList.js');
 const ObfuscatedEmail = require('./ObfuscatedEmail.js');
+
+const css = require('./Home.css');
+
 
 class Home extends React.Component {
   render() {
@@ -9,9 +13,7 @@ class Home extends React.Component {
       <div>
         <h2> Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.</h2>
 
-        <img src="/assets/bne-min.jpeg" alt="Bryce and Emmy"/>
-        <img src="/assets/rne-min.jpeg" alt="Rachael and Emmy"/>
-        <img src="/assets/hike-min.jpg" alt="Rachael, Bryce and Emmy on a hike"/>
+        <ImageList/>
 
         <h3> We live on a quiet little farm in Virginia with our cats, Ruby and Steve. </h3>
 

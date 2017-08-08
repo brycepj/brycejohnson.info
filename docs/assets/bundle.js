@@ -13105,7 +13105,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var React = __webpack_require__(57);
 var ReactDOM = __webpack_require__(108);
 
+var ImageList = __webpack_require__(227);
 var ObfuscatedEmail = __webpack_require__(194);
+
+var css = __webpack_require__(225);
 
 var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
@@ -13127,9 +13130,7 @@ var Home = function (_React$Component) {
           null,
           ' Hello, my name is Bryce. I\'m the husband of Rachael and dad of Emma.'
         ),
-        React.createElement('img', { src: '/assets/bne-min.jpeg', alt: 'Bryce and Emmy' }),
-        React.createElement('img', { src: '/assets/rne-min.jpeg', alt: 'Rachael and Emmy' }),
-        React.createElement('img', { src: '/assets/hike-min.jpg', alt: 'Rachael, Bryce and Emmy on a hike' }),
+        React.createElement(ImageList, null),
         React.createElement(
           'h3',
           null,
@@ -25842,7 +25843,7 @@ module.exports = function (_React$Component) {
   }, {
     key: 'blurTextCss',
     value: function blurTextCss() {
-      return this.state.isObfuscated ? 'blur-text' : 'plain-email-text';
+      return this.state.isObfuscated ? 'blurred-text' : 'email-text';
     }
   }, {
     key: 'render',
@@ -29349,7 +29350,7 @@ exports = module.exports = __webpack_require__(222)(undefined);
 
 
 // module
-exports.push([module.i, "img {\n  max-height: 300px;\n}\n\n.plain-email-text {\n  font-weight: bold;\n}\n\n.blur-text {\n  background: gray;\n  color: white;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n  margin-left: 2px;\n  opacity: .6;\n}\n\n", ""]);
+exports.push([module.i, ".email-text,\n.blurred-text {\n  display: inline-block;\n  margin-left: 4px;\n}\n\n.email-text {\n  font-weight: bold;\n}\n\n.blurred-text {\n  background: gray;\n  color: white;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n  opacity: .6;\n}\n\n", ""]);
 
 // exports
 
@@ -29888,6 +29889,116 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(226);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(223)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./Home.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./Home.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(222)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "img {\n  max-height: 300px;\n  margin: 5px;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var React = __webpack_require__(57);
+var css = __webpack_require__(228);
+
+module.exports = function ImageList() {
+  return React.createElement(
+    'div',
+    { className: 'image-list' },
+    React.createElement('img', { src: '/assets/bne-min.jpeg', alt: 'Bryce and Emmy' }),
+    React.createElement('img', { src: '/assets/rne-min.jpeg', alt: 'Rachael and Emmy' }),
+    React.createElement('img', { src: '/assets/hike-min.jpg', alt: 'Rachael, Bryce and Emmy on a hike' })
+  );
+};
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(229);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(223)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./ImageList.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./ImageList.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(222)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".image-list {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: flex-start;\n  align-items: center;\n  align-content: center;\n}\n\nimg {\n  max-height: 300px;\n  margin: 5px;\n}\n\n", ""]);
+
+// exports
 
 
 /***/ })
