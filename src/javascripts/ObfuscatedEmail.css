@@ -2,7 +2,7 @@ img {
   max-height: 300px;
 }
 
-#email-text {
+.plain-email-text {
   font-weight: bold;
 }
 
@@ -16,9 +16,3 @@ img {
   opacity: .6;
 }
 
-.loading-gears {
-  height: 15px;
-  width: 15px;
-  position: relative;
-  top: 1px;
-}

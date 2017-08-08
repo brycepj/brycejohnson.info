@@ -1,5 +1,6 @@
 const React = require('react');
 const unobfuscateEmailAddress = require('./unobfuscatedEmailSvc.js');
+const css = require('./ObfuscatedEmail.css');
 
 module.exports = class ObfuscatedEmail extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ module.exports = class ObfuscatedEmail extends React.Component {
   }
 
   blurTextCss() {
-    return this.state.isObfuscated ? 'blur-text' : '';
+    return this.state.isObfuscated ? 'blur-text' : 'plain-email-text';
   }
 
   render() {
