@@ -25813,7 +25813,7 @@ var React = __webpack_require__(57);
 var unobfuscateEmailAddress = __webpack_require__(195);
 var css = __webpack_require__(220);
 
-module.exports = function (_React$Component) {
+var ObfuscatedEmail = function (_React$Component) {
   _inherits(ObfuscatedEmail, _React$Component);
 
   function ObfuscatedEmail(props) {
@@ -25858,6 +25858,8 @@ module.exports = function (_React$Component) {
 
   return ObfuscatedEmail;
 }(React.Component);
+
+module.exports = ObfuscatedEmail;
 
 /***/ }),
 /* 195 */
@@ -29931,7 +29933,7 @@ exports = module.exports = __webpack_require__(222)(undefined);
 
 
 // module
-exports.push([module.i, "img {\n  max-height: 300px;\n  margin: 5px;\n}\n\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -29946,7 +29948,7 @@ exports.push([module.i, "img {\n  max-height: 300px;\n  margin: 5px;\n}\n\n", ""
 var React = __webpack_require__(57);
 var css = __webpack_require__(228);
 
-module.exports = function ImageList() {
+function ImageList() {
   return React.createElement(
     'div',
     { className: 'image-list' },
@@ -29954,7 +29956,9 @@ module.exports = function ImageList() {
     React.createElement('img', { src: '/assets/rne-min.jpeg', alt: 'Rachael and Emmy' }),
     React.createElement('img', { src: '/assets/hike-min.jpg', alt: 'Rachael, Bryce and Emmy on a hike' })
   );
-};
+}
+
+module.exports = ImageList;
 
 /***/ }),
 /* 228 */

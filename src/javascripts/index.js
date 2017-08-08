@@ -6,7 +6,6 @@ const ObfuscatedEmail = require('./ObfuscatedEmail.js');
 
 const css = require('./Home.css');
 
-
 class Home extends React.Component {
   render() {
     return (

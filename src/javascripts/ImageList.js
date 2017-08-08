@@ -1,7 +1,7 @@
 const React = require('react');
 const css = require('./ImageList.css');
 
-module.exports = function ImageList() {
+function ImageList() {
   return (
     <div className='image-list'>
       <img src="/assets/bne-min.jpeg" alt="Bryce and Emmy"/>
@@ -10,3 +10,5 @@ module.exports = function ImageList() {
     </div>
   );
 }
+
+module.exports = ImageList;

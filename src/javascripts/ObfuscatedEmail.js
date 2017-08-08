@@ -2,7 +2,7 @@ const React = require('react');
 const unobfuscateEmailAddress = require('./unobfuscatedEmailSvc.js');
 const css = require('./ObfuscatedEmail.css');
 
-module.exports = class ObfuscatedEmail extends React.Component {
+class ObfuscatedEmail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,3 +33,5 @@ module.exports = class ObfuscatedEmail extends React.Component {
     );
   }
 }
+
+module.exports = ObfuscatedEmail;
