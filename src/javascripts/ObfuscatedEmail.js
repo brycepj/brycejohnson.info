@@ -11,6 +11,7 @@ class ObfuscatedEmail extends React.Component {
   }
 
   revealUnobfuscatedAddress() {
+    console.log(this.myRef, this.refs, this.context, this);
     this.setState({
       isObfuscated: false,
       emailAddress: unobfuscateEmailAddress()
@@ -27,7 +28,7 @@ class ObfuscatedEmail extends React.Component {
 
   render() {
     return (
-      <span onClick={ this.revealUnobfuscatedAddress.bind(this) } className={ this.blurTextCss() }>
+      <span onClick={ this.revealUnobfuscatedAddress.bind(this) } className={ this.blurTextCss() } ref={ (span) => { this.myRef = span }}>
         { this.renderedText() }
       </span>
     );
