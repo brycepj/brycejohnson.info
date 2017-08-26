@@ -13597,7 +13597,7 @@ var Home = function (_React$Component) {
         React.createElement(
           'h4',
           null,
-          'In my spare time, I like to help with open source projects and write about programming.'
+          'In my spare time, I like to experiment with code, help with open source projects and write about programming.'
         ),
         React.createElement(
           'h5',
@@ -13620,7 +13620,7 @@ var Home = function (_React$Component) {
         React.createElement(
           'h5',
           null,
-          'Projects'
+          'Projects, experiments and abandonware '
         ),
         React.createElement(
           'ul',
@@ -13647,6 +13647,16 @@ var Home = function (_React$Component) {
             React.createElement(
               'a',
               { href: 'https://github.com/brycepj/scrawl' },
+              'Repo'
+            )
+          ),
+          React.createElement(
+            'li',
+            null,
+            'Monkeyface: Declarative, runtime type checking & interfaces in JavaScript by monkey-patching native types.',
+            React.createElement(
+              'a',
+              { href: 'https://github.com/brycepj/monkeyface' },
               'Repo'
             )
           )
