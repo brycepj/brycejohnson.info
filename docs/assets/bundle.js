@@ -13597,7 +13597,7 @@ var Home = function (_React$Component) {
         React.createElement(
           'h4',
           null,
-          'In my spare time, I like to experiment with code, help with open source projects and write about programming.'
+          'In my spare time, I like to make things with code, help with open source projects and write about programming.'
         ),
         React.createElement(
           'h5',
@@ -13620,7 +13620,7 @@ var Home = function (_React$Component) {
         React.createElement(
           'h5',
           null,
-          'Projects, experiments and abandonware '
+          'Hacks, experiments and reckless abandonware '
         ),
         React.createElement(
           'ul',
@@ -13659,35 +13659,6 @@ var Home = function (_React$Component) {
               { href: 'https://github.com/brycepj/monkeyface' },
               'Repo'
             )
-          )
-        ),
-        React.createElement(
-          'h5',
-          null,
-          'OSS Projects I\'ve contributed to'
-        ),
-        React.createElement(
-          'ul',
-          null,
-          React.createElement(
-            'li',
-            null,
-            'Angular 2'
-          ),
-          React.createElement(
-            'li',
-            null,
-            'Vue.js'
-          ),
-          React.createElement(
-            'li',
-            null,
-            'Angular.io'
-          ),
-          React.createElement(
-            'li',
-            null,
-            'GitLab CE'
           )
         ),
         React.createElement(

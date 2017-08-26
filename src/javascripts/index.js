@@ -19,7 +19,7 @@ class Home extends React.Component {
         <h4> I work as a frontend engineer at <a href='https://about.gitlab.com/'>GitLab</a>. Nearly all of my work happens in the open,
           which you can see <a href='https://gitlab.com/brycepj'>here</a>.</h4>
 
-        <h4>In my spare time, I like to experiment with code, help with open source projects and write about programming.</h4>
+        <h4>In my spare time, I like to make things with code, help with open source projects and write about programming.</h4>
 
         <h5>Articles</h5>
 
@@ -33,7 +33,7 @@ class Home extends React.Component {
           {/* <li>Speeding Up Frontend Performance on Merge Requests at GitLab</li> */}
         </ul>
 
-        <h5>Projects, experiments and abandonware </h5>
+        <h5>Hacks, experiments and reckless abandonware </h5>
 
         <ul>
           <li> Flexbox in 5 minutes- an interactive tour of the new-ish CSS property: flexbox
@@ -48,15 +48,6 @@ class Home extends React.Component {
             Monkeyface: Declarative, runtime type checking & interfaces in JavaScript by monkey-patching native types.
             <a href="https://github.com/brycepj/monkeyface">Repo</a>
           </li>
-        </ul>
-
-        <h5>OSS Projects I've contributed to</h5>
-
-        <ul>
-          <li>Angular 2</li>
-          <li>Vue.js</li>
-          <li>Angular.io</li>
-          <li>GitLab CE</li>
         </ul>
 
         <p>The best way to reach me is through email, at
