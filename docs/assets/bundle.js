@@ -13569,46 +13569,40 @@ var Home = function (_React$Component) {
         React.createElement(
           "h2",
           null,
-          " ",
           "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma."
         ),
         React.createElement(ImageList, null),
         React.createElement(
           "h3",
           null,
-          " ",
-          "We live on a quiet little farm in Virginia with our cats, Ruby and Steve.",
-          " "
+          "We live on a quiet little farm in Virginia with our cats, Ruby and Steve."
         ),
         React.createElement(
           "h4",
           null,
-          " ",
-          "I work as a senior frontend engineer at",
-          " ",
+          "I work remotely as a senior frontend engineer at",
           React.createElement(
             "a",
             { href: "https://www.hirevue.com/" },
             "HireVue"
           ),
-          ", previously at",
-          " ",
+          ", and worked previously at",
           React.createElement(
             "a",
             { href: "https://about.gitlab.com/" },
             "GitLab"
           ),
-          "."
+          " and at two other startups."
         ),
         React.createElement(
           "h4",
           null,
-          "In my spare time, I like to make things with code, help with open source projects and write about programming."
+          "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music."
         ),
         React.createElement(
           "p",
           null,
-          "The best way to reach me is through email, at",
+          "I also strongly believe that social media are wreaking havoc on our minds, relationships, communities, and basic capacities for happiness and fullfilment. So you won't be able to connect with me there, but feel free to reach out through email, at",
           React.createElement(ObfuscatedEmail, null)
         )
       );
