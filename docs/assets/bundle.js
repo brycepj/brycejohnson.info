@@ -13561,110 +13561,54 @@ var Home = function (_React$Component) {
   }
 
   _createClass(Home, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return React.createElement(
-        'div',
+        "div",
         null,
         React.createElement(
-          'h2',
+          "h2",
           null,
-          ' Hello, my name is Bryce. I\'m the husband of Rachael and dad of Emma.'
+          " ",
+          "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma."
         ),
         React.createElement(ImageList, null),
         React.createElement(
-          'h3',
+          "h3",
           null,
-          ' We live on a quiet little farm in Virginia with our cats, Ruby and Steve. '
+          " ",
+          "We live on a quiet little farm in Virginia with our cats, Ruby and Steve.",
+          " "
         ),
         React.createElement(
-          'h4',
+          "h4",
           null,
-          ' I work as a frontend engineer at ',
+          " ",
+          "I work as a senior frontend engineer at",
+          " ",
           React.createElement(
-            'a',
-            { href: 'https://about.gitlab.com/' },
-            'GitLab'
+            "a",
+            { href: "https://www.hirevue.com/" },
+            "HireVue"
           ),
-          '. Nearly all of my work happens in the open, which you can see ',
+          ", previously at",
+          " ",
           React.createElement(
-            'a',
-            { href: 'https://gitlab.com/brycepj' },
-            'here'
+            "a",
+            { href: "https://about.gitlab.com/" },
+            "GitLab"
           ),
-          '.'
+          "."
         ),
         React.createElement(
-          'h4',
+          "h4",
           null,
-          'In my spare time, I like to make things with code, help with open source projects and write about programming.'
+          "In my spare time, I like to make things with code, help with open source projects and write about programming."
         ),
         React.createElement(
-          'h5',
+          "p",
           null,
-          'Articles'
-        ),
-        React.createElement(
-          'ul',
-          null,
-          React.createElement(
-            'li',
-            null,
-            React.createElement(
-              'a',
-              { href: 'https://medium.com/@_devbryce/6-compelling-use-cases-for-es6-proxies-2a8e2ddd9e3a' },
-              '6 compelling use cases for ES6 proxies '
-            )
-          )
-        ),
-        React.createElement(
-          'h5',
-          null,
-          'Hacks, experiments and reckless abandonware '
-        ),
-        React.createElement(
-          'ul',
-          null,
-          React.createElement(
-            'li',
-            null,
-            ' Flexbox in 5 minutes- an interactive tour of the new-ish CSS property: flexbox',
-            React.createElement(
-              'a',
-              { href: 'https://cvan.io/flexboxin5/' },
-              'Demo'
-            ),
-            React.createElement(
-              'a',
-              { href: 'https://github.com/brycepj/flexbox' },
-              'Repo'
-            )
-          ),
-          React.createElement(
-            'li',
-            null,
-            'Scrawl: a simple note-taking CLI',
-            React.createElement(
-              'a',
-              { href: 'https://github.com/brycepj/scrawl' },
-              'Repo'
-            )
-          ),
-          React.createElement(
-            'li',
-            null,
-            'Monkeyface: Declarative, runtime type checking & interfaces in JavaScript by monkey-patching native types.',
-            React.createElement(
-              'a',
-              { href: 'https://github.com/brycepj/monkeyface' },
-              'Repo'
-            )
-          )
-        ),
-        React.createElement(
-          'p',
-          null,
-          'The best way to reach me is through email, at',
+          "The best way to reach me is through email, at",
           React.createElement(ObfuscatedEmail, null)
         )
       );
@@ -13674,7 +13618,7 @@ var Home = function (_React$Component) {
   return Home;
 }(React.Component);
 
-ReactDOM.render(React.createElement(Home, null), document.getElementById('home-root'));
+ReactDOM.render(React.createElement(Home, null), document.getElementById("home-root"));
 
 /***/ }),
 /* 95 */
