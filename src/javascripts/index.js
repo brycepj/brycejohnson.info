@@ -36,7 +36,7 @@ class Home extends React.Component {
         </h4>
 
         <p>
-          I also strongly believe that social media are wreaking havoc on our
+          I strongly believe that social media are wreaking havoc on our
           minds, relationships, communities, and basic capacities for happiness
           and fullfilment. So you won't be able to connect with me there, but
           feel free to reach out through email, at

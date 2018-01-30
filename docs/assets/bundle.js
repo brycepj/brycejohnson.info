@@ -13603,7 +13603,7 @@ var Home = function (_React$Component) {
         React.createElement(
           "p",
           null,
-          "I also strongly believe that social media are wreaking havoc on our minds, relationships, communities, and basic capacities for happiness and fullfilment. So you won't be able to connect with me there, but feel free to reach out through email, at",
+          "I strongly believe that social media are wreaking havoc on our minds, relationships, communities, and basic capacities for happiness and fullfilment. So you won't be able to connect with me there, but feel free to reach out through email, at",
           React.createElement(ObfuscatedEmail, null)
         )
       );
