@@ -9,7 +9,7 @@ const css = require("./Home.css");
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="page-wrap">
         <h2>
           Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
         </h2>
@@ -22,10 +22,9 @@ class Home extends React.Component {
         </h3>
 
         <h4>
-          I work remotely as a senior frontend engineer at
+          I work remotely as a senior frontend engineer at{" "}
           <a href="https://www.hirevue.com/">HireVue</a>, and worked previously
-          at
-          <a href="https://about.gitlab.com/">GitLab</a> and at two other
+          at <a href="https://about.gitlab.com/">GitLab</a> and at two other
           startups.
         </h4>
 

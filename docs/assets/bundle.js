@@ -13565,7 +13565,7 @@ var Home = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "page-wrap" },
         React.createElement(
           "h2",
           null,
@@ -13581,12 +13581,13 @@ var Home = function (_React$Component) {
           "h4",
           null,
           "I work remotely as a senior frontend engineer at",
+          " ",
           React.createElement(
             "a",
             { href: "https://www.hirevue.com/" },
             "HireVue"
           ),
-          ", and worked previously at",
+          ", and worked previously at ",
           React.createElement(
             "a",
             { href: "https://about.gitlab.com/" },
@@ -30010,7 +30011,7 @@ exports = module.exports = __webpack_require__(56)(undefined);
 
 
 // module
-exports.push([module.i, "li a {\n  display: inline-block;\n  margin: 0 3px;\n}", ""]);
+exports.push([module.i, "li a {\n  display: inline-block;\n  margin: 0 3px;\n}\n\n.page-wrap {\n max-width: 900px;\n}\n", ""]);
 
 // exports
 

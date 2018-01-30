@@ -2,3 +2,7 @@ li a {
   display: inline-block;
   margin: 0 3px;
 }
+
+.page-wrap {
+ max-width: 900px;
+}
