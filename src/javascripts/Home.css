@@ -3,6 +3,11 @@ li a {
   margin: 0 3px;
 }
 
+
 .page-wrap {
- max-width: 900px;
+  max-width: 900px;
+}
+
+.page-wrap p {
+  line-height: 25px;
 }

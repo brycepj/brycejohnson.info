@@ -29966,7 +29966,7 @@ exports = module.exports = __webpack_require__(56)(undefined);
 
 
 // module
-exports.push([module.i, ".email-text,\n.blurred-text {\n  display: inline-block;\n  margin-left: 4px;\n}\n\n.email-text {\n  font-weight: bold;\n}\n\n.blurred-text {\n  background: gray;\n  color: white;\n  padding: 2px 6px;\n  border-radius: 3px;\n  cursor: pointer;\n  opacity: .6;\n}\n\n", ""]);
+exports.push([module.i, ".email-text,\n.blurred-text {\n  display: inline-block;\n  margin-left: 4px;\n}\n\n.email-text {\n  font-weight: bold;\n}\n\n.blurred-text {\n  background: gray;\n  color: white;\n  padding: 0 6px;\n  border-radius: 3px;\n  cursor: pointer;\n  opacity: .6;\n}\n\n", ""]);
 
 // exports
 
@@ -30011,7 +30011,7 @@ exports = module.exports = __webpack_require__(56)(undefined);
 
 
 // module
-exports.push([module.i, "li a {\n  display: inline-block;\n  margin: 0 3px;\n}\n\n.page-wrap {\n max-width: 900px;\n}\n", ""]);
+exports.push([module.i, "li a {\n  display: inline-block;\n  margin: 0 3px;\n}\n\n\n.page-wrap {\n  max-width: 900px;\n}\n\n.page-wrap p {\n  line-height: 25px;\n}\n", ""]);
 
 // exports
 

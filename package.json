@@ -23,6 +23,8 @@
   "homepage": "https://github.com/brycepj/brycejohnson.info#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
+    "global": "^4.3.2",
+    "http-server": "^0.11.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
