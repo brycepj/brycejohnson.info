@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-
+const shell = require('shelljs');
 app.use(express.static('docs'))
 /*
 app.get('/', function(req, res) {
@@ -11,6 +11,8 @@ app.get('/', function(req, res) {
 
 app.post('/webhook', (req, res) => {
   // TODO: trigger the build, restart pm2 
+
+  shell.exec('./deploy.sh')
   res.send(200);
 });
 
