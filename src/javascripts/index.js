@@ -44,3 +44,5 @@ class Home extends React.Component {
 }
 
 ReactDOM.render(<Home />, document.getElementById("home-root"));
+
+console.log("This is a test.");
