@@ -17,7 +17,7 @@ class Home extends React.Component {
         <ImageList />
 
         <h3>
-          We live on a quiet little farm in Virginia with our cats, Ruby and
+          We live on a farm in Virginia with our cats, Ruby and
           Steve.
         </h3>
 
@@ -36,11 +36,7 @@ class Home extends React.Component {
         </h4>
 
         <p>
-          I strongly believe that social media are wreaking havoc on our
-          minds, relationships, communities, and basic capacities for happiness
-          and fullfilment. So you won't be able to connect with me there, but
-          feel free to reach out through email, at
-          <ObfuscatedEmail />
+	 Feel free to reach out to me through email, at <ObfuscatedEmail />
         </p>
       </div>
     );
