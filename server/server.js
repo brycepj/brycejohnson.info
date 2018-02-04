@@ -10,9 +10,7 @@ app.get('/', function(req, res) {
 */
 
 app.post("/webhook", (req, res) => {
-  // TODO: trigger the build, restart pm2
-
-  shell.exec("./deploy.sh");
+  shell.exec("../deploy.sh");
   res.send(200);
 });
 
