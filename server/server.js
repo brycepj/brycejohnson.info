@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
 
 app.post("/webhook", (req, res) => {
   console.log("WEBHOOK RECEIVED! ABOUT TO RE-DEPLOY");
-  shell.exec("../deploy.sh");
+  shell.exec(path.resolve(__dirname, "../deploy.sh"));
   res.send(200);
 });
 
