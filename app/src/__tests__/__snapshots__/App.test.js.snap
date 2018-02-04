@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
+</h2>,
+        <ImageList />,
+        <h3>
+          We live on a farm in Virginia with our cats, Ruby and Steve.
+</h3>,
+        <h4>
+          I work remotely as a senior frontend engineer at
+           
+          <a
+                    href="https://www.hirevue.com/"
+          >
+                    HireVue
+          </a>
+          , and worked previously at 
+          <a
+                    href="https://about.gitlab.com/"
+          >
+                    GitLab
+          </a>
+           and at two other startups.
+</h4>,
+        <h4>
+          In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.
+</h4>,
+        <styled.p>
+          Feel free to reach out to me through email, at 
+          <ObfuscatedEmail />
+</styled.p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.",
+        },
+        "ref": null,
+        "rendered": "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "We live on a farm in Virginia with our cats, Ruby and Steve.",
+        },
+        "ref": null,
+        "rendered": "We live on a farm in Virginia with our cats, Ruby and Steve.",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "I work remotely as a senior frontend engineer at",
+            " ",
+            <a
+              href="https://www.hirevue.com/"
+>
+              HireVue
+</a>,
+            ", and worked previously at ",
+            <a
+              href="https://about.gitlab.com/"
+>
+              GitLab
+</a>,
+            " and at two other startups.",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "I work remotely as a senior frontend engineer at",
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "HireVue",
+              "href": "https://www.hirevue.com/",
+            },
+            "ref": null,
+            "rendered": "HireVue",
+            "type": "a",
+          },
+          ", and worked previously at ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GitLab",
+              "href": "https://about.gitlab.com/",
+            },
+            "ref": null,
+            "rendered": "GitLab",
+            "type": "a",
+          },
+          " and at two other startups.",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
+        },
+        "ref": null,
+        "rendered": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "Feel free to reach out to me through email, at ",
+            <ObfuscatedEmail />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Feel free to reach out to me through email, at ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
+</h2>,
+          <ImageList />,
+          <h3>
+            We live on a farm in Virginia with our cats, Ruby and Steve.
+</h3>,
+          <h4>
+            I work remotely as a senior frontend engineer at
+             
+            <a
+                        href="https://www.hirevue.com/"
+            >
+                        HireVue
+            </a>
+            , and worked previously at 
+            <a
+                        href="https://about.gitlab.com/"
+            >
+                        GitLab
+            </a>
+             and at two other startups.
+</h4>,
+          <h4>
+            In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.
+</h4>,
+          <styled.p>
+            Feel free to reach out to me through email, at 
+            <ObfuscatedEmail />
+</styled.p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.",
+          },
+          "ref": null,
+          "rendered": "Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "We live on a farm in Virginia with our cats, Ruby and Steve.",
+          },
+          "ref": null,
+          "rendered": "We live on a farm in Virginia with our cats, Ruby and Steve.",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "I work remotely as a senior frontend engineer at",
+              " ",
+              <a
+                href="https://www.hirevue.com/"
+>
+                HireVue
+</a>,
+              ", and worked previously at ",
+              <a
+                href="https://about.gitlab.com/"
+>
+                GitLab
+</a>,
+              " and at two other startups.",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "I work remotely as a senior frontend engineer at",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "HireVue",
+                "href": "https://www.hirevue.com/",
+              },
+              "ref": null,
+              "rendered": "HireVue",
+              "type": "a",
+            },
+            ", and worked previously at ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GitLab",
+                "href": "https://about.gitlab.com/",
+              },
+              "ref": null,
+              "rendered": "GitLab",
+              "type": "a",
+            },
+            " and at two other startups.",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
+          },
+          "ref": null,
+          "rendered": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Feel free to reach out to me through email, at ",
+              <ObfuscatedEmail />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Feel free to reach out to me through email, at ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

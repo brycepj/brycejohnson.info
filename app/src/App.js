@@ -1,25 +1,29 @@
-const React = require("react");
-const ReactDOM = require("react-dom");
+import React, { Component } from "react";
 
-const ImageList = require("./ImageList.js");
-const ObfuscatedEmail = require("./ObfuscatedEmail.js");
+import styled from "styled-components";
 
-const css = require("./Home.css");
+import ImageList from "./ImageList";
+import ObfuscatedEmail from "./ObfuscatedEmail";
 
-class Home extends React.Component {
+const PageWrap = styled.div`
+  max-width: 900px;
+`;
+
+const InvitationToContact = styled.p`
+  line-height: 25px;
+`;
+
+class App extends Component {
   render() {
     return (
-      <div className="page-wrap">
+      <PageWrap>
         <h2>
           Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
         </h2>
 
         <ImageList />
 
-        <h3>
-          We live on a farm in Virginia with our cats, Ruby and
-          Steve.
-        </h3>
+        <h3>We live on a farm in Virginia with our cats, Ruby and Steve.</h3>
 
         <h4>
           I work remotely as a senior frontend engineer at{" "}
@@ -35,14 +39,12 @@ class Home extends React.Component {
           to music.
         </h4>
 
-        <p>
-	 Feel free to reach out to me through email, at <ObfuscatedEmail />
-        </p>
-      </div>
+        <InvitationToContact>
+          Feel free to reach out to me through email, at <ObfuscatedEmail />
+        </InvitationToContact>
+      </PageWrap>
     );
   }
 }
 
-ReactDOM.render(<Home />, document.getElementById("home-root"));
-
-console.log("This is a test.");
+export default App;
