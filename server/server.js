@@ -11,8 +11,8 @@ app.get('/', function(req, res) {
 
 app.post("/webhook", (req, res) => {
   console.log("WEBHOOK RECEIVED! ABOUT TO RE-DEPLOY");
-  shell.exec(path.resolve(__dirname, "../deploy.sh"));
   res.send(200);
+  shell.exec(path.resolve(__dirname, "../deploy.sh"));
 });
 
 console.log("Listening on port 3000");
