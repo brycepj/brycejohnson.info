@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import unobfuscateEmailAddress from "./unobfuscatedEmailSvc";
 
-const EmailText = styled.span`
+export const EmailText = styled.span`
   display: inline-block;
   margin-left: 4px;
   ${p => (!p.isBlurred ? "font-weight: bold" : null)};

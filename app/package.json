@@ -17,5 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile ./testing/setupJest.js",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "jest-styled-components": "^4.11.0-1"
   }
 }
