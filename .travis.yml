@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - "lts/*"
-install: cd app && yarn
+install:
+  - gem install rake
+  - cd app && yarn
 script: yarn test
 notifications:
   email:
