@@ -1,3 +1,3 @@
 install: cd app && yarn
-script: cd app && yarn test
+script: yarn test
 
