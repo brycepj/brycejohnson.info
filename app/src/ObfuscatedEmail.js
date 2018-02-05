@@ -23,7 +23,7 @@ class ObfuscatedEmail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isObfuscated: true
+      isObfuscated: false
     };
   }
 
