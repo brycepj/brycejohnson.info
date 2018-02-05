@@ -52,9 +52,9 @@ ShallowWrapper {
           </a>
            and at two other startups.
 </h4>,
-        <h4>
+        <styled.h4>
           In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.
-</h4>,
+</styled.h4>,
         <styled.p>
           Feel free to reach out to me through email, at 
           <ObfuscatedEmail />
@@ -181,13 +181,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
         },
         "ref": null,
         "rendered": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
-        "type": "h4",
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -258,9 +258,9 @@ ShallowWrapper {
             </a>
              and at two other startups.
 </h4>,
-          <h4>
+          <styled.h4>
             In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.
-</h4>,
+</styled.h4>,
           <styled.p>
             Feel free to reach out to me through email, at 
             <ObfuscatedEmail />
@@ -387,13 +387,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
           },
           "ref": null,
           "rendered": "In my spare time, I like to make things with code, help with open source projects and write about programming. I also enjoy gardening, vermiculture (google it!), working on my car, cooking, and listening to music.",
-          "type": "h4",
+          "type": [Function],
         },
         Object {
           "instance": null,
