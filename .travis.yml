@@ -3,4 +3,12 @@ script: yarn test
 notifications:
   email:
     - 43aa4c14@opayq.com
+  webhooks:
+    urls:
+      - http://brycejohnson.info/webhook
+      on_success: always
+      on_failure: never
+      on_cancel: never
+      on_error: never
+      on_start: never
 
