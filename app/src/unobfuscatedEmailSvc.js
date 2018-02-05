@@ -14,11 +14,6 @@ function unobfuscateEmailAddress() {
     .join("");
 }
 
-function revealEmailAddress(node, emailAddress) {
-  node.classList.remove("blur-text");
-  node.textContent = emailAddress;
-}
-
 function getObfuscators() {
   return ["Z", "-", "$", "&", "^", "#", "Q", "L", "A", "B", "9", "6"];
 }
