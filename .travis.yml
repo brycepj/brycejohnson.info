@@ -1,3 +1,6 @@
 install: cd app && yarn
 script: yarn test
+notifications:
+  email:
+    - 43aa4c14@opayq.com
 
