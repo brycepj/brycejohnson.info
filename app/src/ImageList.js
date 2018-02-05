@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { values, shuffle } from "lodash";
 
-import { bryceAndEmmy, rachaelAndEmmy, hikeImage } from "./assets/index";
+import pictures from "./assets/index";
 
 const Container = styled.div`
   display: flex;
@@ -17,14 +18,35 @@ const Image = styled.img`
   margin: 5px;
 `;
 
-function ImageList() {
-  return (
-    <Container>
-      <Image src={bryceAndEmmy} alt="Bryce and Emmy" />
-      <Image src={rachaelAndEmmy} alt="Rachael and Emmy" />
-      <Image src={hikeImage} alt="Rachael, Bryce and Emmy on a hike" />
-    </Container>
-  );
+class ImageList extends React.Component {
+  constructor(props) {
+    super();
+    this.pictures = values(pictures);
+    this.state = {
+      imagesLoaded: 0,
+      allImagesLoaded: false
+    };
+  }
+  imageLoaded = () => {
+    if (this.state.imagesLoaded === this.pictures.length - 1) {
+      this.setState({ allImagesLoaded: true });
+    } else {
+      this.setState({ imagesLoaded: this.state.imagesLoaded + 1 });
+    }
+  };
+  render() {
+    const { showMorePictures } = this.props;
+    const picturesSet = showMorePictures
+      ? this.pictures
+      : this.pictures.slice(0, 3);
+    return (
+      <Container>
+        {picturesSet.map((src, idx) => {
+          return <Image key={idx} src={src} onLoad={this.imageLoaded} />;
+        })}
+      </Container>
+    );
+  }
 }
 
 export default ImageList;

@@ -21,7 +21,18 @@ ShallowWrapper {
         <h2>
           Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
 </h2>,
-        <ImageList />,
+        <ImageList
+          showMorePictures={false}
+/>,
+        <styled.div
+          onClick={[Function]}
+>
+          <a
+                    href=""
+          >
+                    See a few more...
+          </a>
+</styled.div>,
         <h3>
           We live on a farm in Virginia with our cats, Ruby and Steve.
 </h3>,
@@ -66,10 +77,39 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
+        "nodeType": "class",
+        "props": Object {
+          "showMorePictures": false,
+        },
         "ref": null,
         "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <a
+            href=""
+>
+            See a few more...
+</a>,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "See a few more...",
+            "href": "",
+          },
+          "ref": null,
+          "rendered": "See a few more...",
+          "type": "a",
+        },
         "type": [Function],
       },
       Object {
@@ -187,7 +227,18 @@ ShallowWrapper {
           <h2>
             Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
 </h2>,
-          <ImageList />,
+          <ImageList
+            showMorePictures={false}
+/>,
+          <styled.div
+            onClick={[Function]}
+>
+            <a
+                        href=""
+            >
+                        See a few more...
+            </a>
+</styled.div>,
           <h3>
             We live on a farm in Virginia with our cats, Ruby and Steve.
 </h3>,
@@ -232,10 +283,39 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
+          "nodeType": "class",
+          "props": Object {
+            "showMorePictures": false,
+          },
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <a
+              href=""
+>
+              See a few more...
+</a>,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "See a few more...",
+              "href": "",
+            },
+            "ref": null,
+            "rendered": "See a few more...",
+            "type": "a",
+          },
           "type": [Function],
         },
         Object {

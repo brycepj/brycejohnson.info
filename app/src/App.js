@@ -5,15 +5,34 @@ import styled from "styled-components";
 import ImageList from "./ImageList";
 import ObfuscatedEmail from "./ObfuscatedEmail";
 
-const PageWrap = styled.div`
-  max-width: 900px;
-`;
+const PageWrap = styled.div``;
 
 const InvitationToContact = styled.p`
   line-height: 25px;
 `;
 
+const SeeMoreWrap = styled.div`
+  text-align: left;
+`;
+const SeeLessWrap = styled.div`
+  text-align: left;
+`;
+
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showMorePictures: false
+    };
+  }
+  showMorePictures = e => {
+    e.preventDefault();
+    this.setState({ showMorePictures: true });
+  };
+  showFewerPictures = e => {
+    e.preventDefault();
+    this.setState({ showMorePictures: false });
+  };
   render() {
     return (
       <PageWrap>
@@ -21,7 +40,18 @@ class App extends Component {
           Hello, my name is Bryce. I'm the husband of Rachael and dad of Emma.
         </h2>
 
-        <ImageList />
+        <ImageList showMorePictures={this.state.showMorePictures} />
+        {!this.state.showMorePictures ? (
+          <SeeMoreWrap onClick={this.showMorePictures}>
+            <a href="">See a few more...</a>
+          </SeeMoreWrap>
+        ) : (
+          <SeeLessWrap>
+            <a href="" onClick={this.showFewerPictures}>
+              See a few less...
+            </a>
+          </SeeLessWrap>
+        )}
 
         <h3>We live on a farm in Virginia with our cats, Ruby and Steve.</h3>
 

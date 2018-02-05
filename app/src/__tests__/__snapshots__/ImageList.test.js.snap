@@ -19,15 +19,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <styled.img
-          alt="Bryce and Emmy"
+          onLoad={[Function]}
           src="bne-min.jpeg"
 />,
         <styled.img
-          alt="Rachael and Emmy"
+          onLoad={[Function]}
           src="rne-min.jpeg"
 />,
         <styled.img
-          alt="Rachael, Bryce and Emmy on a hike"
+          onLoad={[Function]}
           src="hike-min.jpg"
 />,
       ],
@@ -36,10 +36,10 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "class",
         "props": Object {
-          "alt": "Bryce and Emmy",
+          "onLoad": [Function],
           "src": "bne-min.jpeg",
         },
         "ref": null,
@@ -48,10 +48,10 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1",
         "nodeType": "class",
         "props": Object {
-          "alt": "Rachael and Emmy",
+          "onLoad": [Function],
           "src": "rne-min.jpeg",
         },
         "ref": null,
@@ -60,10 +60,10 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "2",
         "nodeType": "class",
         "props": Object {
-          "alt": "Rachael, Bryce and Emmy on a hike",
+          "onLoad": [Function],
           "src": "hike-min.jpg",
         },
         "ref": null,
@@ -81,15 +81,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.img
-            alt="Bryce and Emmy"
+            onLoad={[Function]}
             src="bne-min.jpeg"
 />,
           <styled.img
-            alt="Rachael and Emmy"
+            onLoad={[Function]}
             src="rne-min.jpeg"
 />,
           <styled.img
-            alt="Rachael, Bryce and Emmy on a hike"
+            onLoad={[Function]}
             src="hike-min.jpg"
 />,
         ],
@@ -98,10 +98,10 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "class",
           "props": Object {
-            "alt": "Bryce and Emmy",
+            "onLoad": [Function],
             "src": "bne-min.jpeg",
           },
           "ref": null,
@@ -110,10 +110,10 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "class",
           "props": Object {
-            "alt": "Rachael and Emmy",
+            "onLoad": [Function],
             "src": "rne-min.jpeg",
           },
           "ref": null,
@@ -122,10 +122,10 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "2",
           "nodeType": "class",
           "props": Object {
-            "alt": "Rachael, Bryce and Emmy on a hike",
+            "onLoad": [Function],
             "src": "hike-min.jpg",
           },
           "ref": null,
