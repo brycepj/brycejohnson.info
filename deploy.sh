@@ -12,5 +12,5 @@ echo "Preparing to restart server"
 cd ../server && yarn install --force
 
 echo "Restart server..."
-pm2 start server.js --name 'brycejohnson.info'
+pm2 restart 0
 
