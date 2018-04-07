@@ -7,28 +7,45 @@ categories: accessibility
 
 I recently ran into a scenario at work where I wasn't sure whether to use `aria-hidden="true"` or `role="presentation"`.
 When I turned to the internet for answers, I found some [good articles](#good-resources) about how and why to use them, but they didn't apply
-to my use-case. Everything I read started with official specs (TODO: link) or documentation (TODO: link) and broke them down into more human-readable language,
+to my use-case, and I came away still feeling pretty hazy about how to distinguish them. Everything I read started with official specs (TODO: link) or documentation (TODO: link) and broke them down into more human-readable language,
 with a few simple code samples.
 
-This article is an attempt to go at my question in the opposite direction. I'm essentially asking, how are `aria-hidden="true"` and `role="presentation"`
-used by engineers who work on popular, accessible web sites and applications, and what does that tell me about the true purpose of these attributes?
+This post is an attempt to go at my question in the opposite direction. I'm essentially asking, how are `aria-hidden="true"` and `role="presentation"`
+used by engineers who work on popular, accessible web sites and applications, and what does that tell me about the purpose of these attributes? Below you'll
+find screenshots and code samples from sites like Amazon, Facebook, Twitter, (list all).
 
-## Examples of aria-hidden="true"
-1. loaded content in the page that is waiting for user input to show it (performance)
-  - content tabs that sit in the DOM but are hidden: https://cl.ly/391C1I0u2Q0R https://www.cdc.gov/healthyyouth/about/index.htm
-  - dropdown menus: https://cl.ly/2e3H1H1P3u1Y https://www.canada.ca/en/services/benefits/family.html - AH 17 RP 0
-  - tooltip's that will be shown https://cl.ly/3n3W2v2I2v1L
-  - DOM content that is loaded for a slider, but won't be displayed until a carousel clicks it https://cl.ly/3s03251a453q
-  - Message settings that are in the DOM but hidden from view: https://cl.ly/3t17202C3t2v
-  - Carosel nav right button that is hidden until hover https://cl.ly/1i0f0s0g0j1Q
-  - The wrapper for loading spinner (img) https://cl.ly/3I132P3O0k03
-  - Hidden carousel cards- https://cl.ly/1G3G3I051F3U
-  - google apps popup menu https://cl.ly/0w0i0e2G3h3s - https://cl.ly/1J0o3M0l0b2f  performance is a big reason, you want it in the DOM
+## What aria-hidden="true" is used for:
 
-2. Hiding text that you're providing better content for assistive technologies nearby
-  - hiding navigation text that you want to make better for a11y: https://cl.ly/2u0i1V032z04
-  - Hide text that you're going to give better text for nearby: https://cl.ly/3u051743262C https://cl.ly/3c033G1Q0U10 https://cl.ly/3k2i290a473m https://cl.ly/432r3h46251m
-  - Timer, in favor of more human readable text https://cl.ly/0B0V0Q1E0m1Y
+### 1. Content that is visually hidden, but still exists in the DOM, like:
+
+[explanation about performance]
+
+#### [cdc.gov] Content for hidden panels - https://cl.ly/391C1I0u2Q0R https://www.cdc.gov/healthyyouth/about/index.htm
+  <figure>
+    <img />
+    <figcaption>[facebook.com]</figcaption>
+  </figure>
+
+ Code:
+  ```html
+    <div></div>
+    ```
+
+#### [canada.ca] Non-expanded Dropdown menus https://cl.ly/2e3H1H1P3u1Y https://www.canada.ca/en/services/benefits/family.html
+#### [facebook.com] Tooltips that aren't displayed tooltip's that will be shown https://cl.ly/3n3W2v2I2v1L
+#### [facebook.com] Inactive slides on a carousel slider  https://cl.ly/3s03251a453q
+#### [amazon.com] Buttons that are hidden until you hover over them https://cl.ly/1i0f0s0g0j1Q
+#### [amazon.com] The wrapper for a loading spinner https://cl.ly/3I132P3O0k03
+#### [amazon.com] Hidden carousel cards- https://cl.ly/1G3G3I051F3U
+#### [google.com] Popup menus that are not selected https://cl.ly/0w0i0e2G3h3s - https://cl.ly/1J0o3M0l0b2f  M
+
+### 2. Content that requires visual cues to understand, and for which you've provided a better alternative for screenreaders, like:
+
+[explanation]
+
+#### [twitter.com] Terse button text https://cl.ly/2u0i1V032z04
+#### [linkedin.com] Common action buttons that need context https://cl.ly/3u051743262C https://cl.ly/3c033G1Q0U10 https://cl.ly/3k2i290a473m https://cl.ly/432r3h46251m
+#### [amazon.com] A countdown timer  https://cl.ly/0B0V0Q1E0m1Y
 
 3. Icons, icons, icons
   - Icons galore - https://cl.ly/1y1f2v0t3C0u
